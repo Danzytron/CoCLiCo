@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #000028;
+    color: #fff;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+
+}
+.navbar ul li {
+    margin: 0 10px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+
+
+}
+.navbar .title {
+    position: relative;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+}
+
+.title span {
+    color: #0556f3;
+}
+
+
+.navbar li.active a,
+.navbar li:hover a {
+    color: #0556f3;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.content p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.content strong {
+  color: #1e40af;
+}
+.logo-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-logo {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+.footer
+{
+  background-color:  #000028;
+  margin-top: auto;
+  margin-bottom: -20px;
+}
+
+.footer ul 
+{
+  list-style: none;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer ul li 
+{
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.footer ul li a 
+{
+  text-decoration: none;
+  color: whitesmoke;
+  display: inline-block;
+  padding: 3px 20px;
+}
+
+.footer ul li a:hover
+{
+  color:  #0556f3;
+}
+
+
+.copy-right
+{
+  text-align: center;
+  padding-bottom: 30px;
+  color: whitesmoke;
+}

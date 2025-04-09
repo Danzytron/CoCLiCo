@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn HTML & CSS | CoCliCo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      font-weight: 400;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #000028;
+      color: #fff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin: 0 10px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.5s;
+      font-weight: 400;
+    }
+
+    .navbar .title {
+      text-decoration: none;
+      font-size: 2em;
+      font-weight: 700;
+      color: white;
+    }
+
+    .title span {
+      color: #0556f3;
+    }
+
+    .navbar li.active a,
+    .navbar li:hover a {
+      color: #0556f3;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #0556f3;
+    }
+
+    code, pre {
+      background-color: #efefef;
+      padding: 10px;
+      display: block;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      font-weight: 400;
+    }
+
+    a {
+      color: #0556f3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer
+  {
+    background-color:  #000028;
+    margin-top: auto;
+    margin-bottom: -20px;
+  }
+  
+  .footer ul 
+  {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .footer ul li 
+  {
+    display: inline-block;
+    padding: 0px 15px;
+  }
+  
+  .footer ul li a 
+  {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 3px 20px;
+  }
+  
+  .footer ul li a:hover
+  {
+    color:  #0556f3;
+  }
+  
+  
+  .copy-right
+  {
+    text-align: center;
+    padding-bottom: 30px;
+    color: whitesmoke;
+  }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="about.html" class="title">CoCL<span>iCo</span></a>
+    <ul>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="learn.html">Learn</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section>
+      <h2>What is HTML?</h2>
+      <p><strong>HTML</strong> (HyperText Markup Language) is the standard language used to create the structure of web pages. It allows you to add headings, paragraphs, links, images, and more.</p>
+      <h3>Example HTML Code:</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section>
+      <h2>What is CSS?</h2>
+      <p><strong>CSS</strong> (Cascading Style Sheets) is used to style and design HTML elements. With CSS, you can change colors, fonts, layouts, spacing, and much more to make your website visually appealing.</p>
+      <h3>Example CSS Code:</h3>
+      <pre><code>&lt;style&gt;
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #1e90ff;
+  }
+
+  p {
+    font-size: 18px;
+    color: #555;
+  }
+&lt;/style&gt;
+</code></pre>
+    </section>
+
+    <section>
+      <h2>Want to Try It Yourself?</h2>
+      <p>You can experiment with HTML and CSS using free online editors like <a href="https://codepen.io/" target="_blank">CodePen</a>, <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>, or <a href="https://playcode.io/" target="_blank">PlayCode</a>.</p>
+    </section>
+
+  </main>
+
+  <section class="footer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="learn.html">Learn</a></li>
+    </ul>
+    <p class="copy-right">Copyright © 2025 All rights reserved by CoCLiCo.</p>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - CoCliCo</title>
+  <link rel="icon" type="image/webp" href="logo.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #000028;
+    }
+
+    .navbar .title {
+      font-size: 2em;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar .title span {
+      color: #0556f3;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin: 0 10px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar li.active a,
+    .navbar ul li a:hover {
+      color: #0556f3;
+    }
+
+    .contact-wrapper {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .col-md-4 {
+      flex: 1 1 30%;
+    }
+
+    .col-md-8 {
+      flex: 1 1 65%;
+    }
+
+    h2, h4 {
+      color: #1e3a8a;
+    }
+
+    .form-label {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .btn-primary {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background-color: #1e40af;
+    }
+
+    .social-links a {
+      display: block;
+      margin-bottom: 12px;
+      color: #1e3a8a;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #1e40af;
+    }
+
+.footer
+{
+  background-color:  #000028;
+  margin-top: auto;
+  margin-bottom: -20px;
+}
+
+.footer ul 
+{
+  list-style: none;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer ul li 
+{
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.footer ul li a 
+{
+  text-decoration: none;
+  color: whitesmoke;
+  display: inline-block;
+  padding: 3px 20px;
+}
+
+.footer ul li a:hover
+{
+  color:  #0556f3;
+}
+
+.copy-right
+{
+  text-align: center;
+  padding-bottom: 30px;
+  color: whitesmoke;
+}
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .col-md-4,
+      .col-md-8 {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="about.html" class="title">CoCL<span>iCo</span></a>
+    <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="learn.html">Learn</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-wrapper">
+    <div class="row">
+
+      <div class="col-md-4">
+        <h4>Connect With Us</h4>
+        <div class="social-links mt-3">
+          <a href="https://facebook.com/roldan.delarmente.1" target="_blank">📘 Facebook</a>
+          <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+          <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+          <a href="mailto:rdelarmente0@gmail.com">📧 Email Us</a>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <h2>Contact Us</h2>
+        <p class="text-muted" style="margin: 10px 0 20px;">
+          Have questions, suggestions, or just want to say hi? We'd love to hear from you!
+        </p>
+
+        <form>
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="message" class="form-label">Your Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <section class="footer">
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About Us</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+    	<li>
+				<a href="learn.html">Learn</a>
+			</li>
+		</ul>
+		<p class="copy-right">Copyright @2025 All right reserved by CoCLiCo. </p>
+	</section>
+
+</body>
+</html>
